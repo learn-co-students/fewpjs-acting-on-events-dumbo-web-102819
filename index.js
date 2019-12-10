@@ -21,22 +21,11 @@ function moveDodgerLeft() {
     }
 }
 
-
 //function to make dodger move right
 function moveDodgerRight() {
     let rightNumbers = dodger.style.left.replace('px', '');
     let right = parseInt(rightNumbers, 10);
-
-    // console.log()
-
     if(right < 360) {
         dodger.style.left = `${right + 1}px`;
     }
-
-    // console.log(dodger.style.left)
 }
-
-
-// dodger.style.backgroundColor = "#FF69B4";
-// dodger.style.bottom = "100px";
-// dodger.style.bottom = "0px";
